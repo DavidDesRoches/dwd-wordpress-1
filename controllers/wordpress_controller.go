@@ -19,6 +19,12 @@ package controllers
 import (
 	"context"
 
+	// Assignment recommends these imports below
+	appsv1 "k8s.io/api/apps/v1"
+	corev1 "k8s.io/api/core/v1"
+	"k8s.io/apimachinery/pkg/api/errors"
+	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+
 	"github.com/go-logr/logr"
 	"k8s.io/apimachinery/pkg/runtime"
 	ctrl "sigs.k8s.io/controller-runtime"
@@ -41,7 +47,7 @@ func (r *WordpressReconciler) Reconcile(req ctrl.Request) (ctrl.Result, error) {
 	_ = context.Background()
 	_ = r.Log.WithValues("wordpress", req.NamespacedName)
 
-	// your logic here
+	//  your logic here
 
 	return ctrl.Result{}, nil
 }
