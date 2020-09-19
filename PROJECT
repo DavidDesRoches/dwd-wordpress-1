@@ -1,0 +1,7 @@
+domain: example.com
+layout: go.kubebuilder.io/v2
+projectName: dwd-wordpress-1
+repo: github.com/daviddesroches/dwd-wordpress-1
+version: 3-alpha
+plugins:
+  go.sdk.operatorframework.io/v2-alpha: {}
